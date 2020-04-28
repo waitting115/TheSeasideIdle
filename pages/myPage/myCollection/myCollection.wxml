@@ -1,0 +1,12 @@
+<view class="all">
+  <view wx:for="{{myClt}}" wx:key="*this" class='item'>
+    <view class='itemTop' bindtap='clickShop' data-openID='{{item.openID}}'>{{item.userName}}店 ></view>
+    <view class='itemCenter' bindtap='clickGoods' data-item='{{item}}'>
+      <image src='{{item.picture[0]}}' class='img' mode='aspectFill'></image>
+      <view class='title'>{{item.goodsTitle}}</view>
+    </view>
+  </view>
+  <view class='footer'>已经到底啦亲~</view>
+
+  <view class='null' wx:if='{{myClt.length == 0}}'>您没有收藏任何东西，赶快去逛逛吧~</view>
+</view>

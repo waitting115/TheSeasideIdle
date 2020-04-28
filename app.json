@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/publishPage/publishPage",
+    "pages/myPage/myPage",
+    "pages/myPage/backStage/backStage",
+    "pages/homePage/search/search",
+    "pages/homePage/classify/classify",
+    "pages/homePage/goodsDetails/goodsDetails",
+    "pages/homePage/individualStore/individualStore",
+    "pages/homePage/chatScreen/chatScreen",
+    "pages/homePage/buyGoods/buyGoods",
+    "pages/myPage/personalHome/personalHome",
+    "pages/myPage/myMessage/myMessage",
+    "pages/myPage/myPublish/myPublish",
+    "pages/myPage/callCenter/callCenter",
+    "pages/myPage/install/install",
+    "pages/myPage/myAttention/myAttention",
+    "pages/publishPage/openAlbum/openAlbum",
+    "component/product-display/product-display",
+    "pages/myPage/myCollection/myCollection",
+    "pages/myPage/feedback/feedback",
+    "component/publish/publish",
+    "pages/myPage/editCommodity/editCommodity",
+    "pages/myPage/inspectedGoods/inspectedGoods"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "海滨小转转",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff3a59",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "首页",
+        "iconPath": "icons/dollar6.png",
+        "selectedIconPath": "icons/dollar4.png"
+      },
+      {
+        "pagePath": "pages/publishPage/publishPage",
+        "text": "发布",
+        "iconPath": "icons/dollar3.png",
+        "selectedIconPath": "icons/dollar7.png"
+      },
+      {
+        "pagePath": "pages/myPage/myPage",
+        "text": "我的",
+        "iconPath": "icons/dollar.png",
+        "selectedIconPath": "icons/dollar5.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "debug": false
+}

@@ -1,0 +1,6 @@
+{
+
+  "usingComponents": {
+    "publish": "/component/publish/publish"
+  }
+}

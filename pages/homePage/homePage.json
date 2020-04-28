@@ -1,0 +1,10 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#f0dfc9",
+  "navigationBarTitleText": "首页",
+  "navigationBarTextStyle": "black",
+
+  "usingComponents": {
+    "product-display": "/component/product-display/product-display"
+  }
+}

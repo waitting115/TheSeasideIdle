@@ -1,0 +1,50 @@
+<view class="all">
+
+  <!-- 待审核商品 -->
+  <view class="checkGoods">
+    <view class="checkBar">
+      <text class="checkTitle">待审核商品：</text>
+    </view>
+    <view class="checkContent">
+      <view class='checkItem' wx:for="{{inspectedGoods}}" wx:key="{{index}}" bindtap="checkGoods" data-msg="">
+        <image class="checkImg" src="{{item.picture[0]}}" bindtap="checkImgTap" data-item="{{item}}"></image>
+      </view>
+    </view>
+    <view wx:if="{{inspectedGoods.length == 0}}">无</view>
+  </view>
+
+  <!-- 总体详情 -->
+  <view class="overAll">
+    <view class="cls" bindtap="registeredNumTap"><!--点击事件待写-->
+      <view class="myTitle">总注册人数：{{registeredNum}}人</view>
+      <image src='/icons/right.png' class='myRightImg'></image>
+    </view>
+    <view class="cls" bindtap="priductsShelvesNumTap">
+      <view class="myTitle">总上架商品：{{productsShelvesNum}}件</view>
+      <image src='/icons/right.png' class='myRightImg'></image>
+    </view>
+    <view class="cls" bindtap="removedShelvesNumTap">
+      <view class="myTitle">总下架商品：{{removedShelvesNum}}件</view>
+      <image src='/icons/right.png' class='myRightImg'></image>
+    </view>
+    
+  </view>
+
+  <!-- 今日详情 -->
+  <!-- <view class="nowDay">
+    <view>现在在线人数：{{}}</view>
+  </view> -->
+  
+  <!-- 总体登录日表 -->
+  <!-- <view>总体登录日表</view> -->
+  <ec-canvas ec="{{ ec }}"></ec-canvas>
+
+  <!-- <view>商品类别分布表</view> -->
+  <ec-canvas ec="{{ ec2 }}"></ec-canvas>
+
+  <!-- 指定日期的信息 -->
+  <view class="calendarMsg">
+  
+  </view>
+
+</view>

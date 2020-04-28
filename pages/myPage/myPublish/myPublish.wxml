@@ -1,0 +1,10 @@
+<view class="all">
+  <product-display 
+    recommendation='{{recommendation}}'
+    bindtouchstart='touchstart'
+    bindtouchmove="touchmove"
+    bindtouchend='touchend'
+    bind:index = "getIndex"
+    bind:item = "getItem"
+    ></product-display>
+</view>

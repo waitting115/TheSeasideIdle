@@ -1,0 +1,108 @@
+.all {
+  width: 100%;
+  min-height: 100%;
+  background: #f2f2f2;
+  padding-top: 3%;
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+}
+.item {
+  width: 950rpx;
+  height: 200rpx;
+  position: relative;
+  /* left: -25%; */
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all .4s;
+}
+.content {
+  width: 750rpx;
+  height: 200rpx;
+  /* background: red; */
+  display: flex;
+  /* background: yellow; */
+  /* transition: all 0.2s; */
+}
+/* .content[data-type='0'] {
+  transform: translate(0,0);
+} */
+/* .content[data-type='1'] {
+  transform: translate(30%,0);
+} */
+.img {
+  width: 23%;
+  height: 80%;
+  margin: 2.5% 3%;
+  border-radius: 100%;
+}
+.right {
+  width: 75%;
+  height: 100%;
+  /* background: green; */
+  /* margin: 0 3% 0 0 ; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.Msg {
+  width: 100%;
+  /* background: #ccc; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.userName {
+  font-size: 50rpx;
+  width: 100%;
+  text-align: center;
+  font-family: serif;
+  /* border-bottom: 1px solid #ccc; */
+}
+.lastMsg {
+  font-size: 30rpx;
+}
+.prompt {
+  width: 95rpx;
+  margin-right: 1%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.timePrompt {
+  margin-top: 30rpx;
+  color: #8c8c8c;
+  font-size: 30rpx;
+}
+.NewMsgPrompt {
+  width: 45rpx;
+  height: 43rpx;
+  margin-bottom: 50rpx;
+  text-align: center;
+  line-height: 43rpx;
+  color: #fff;
+  background: #f44e2f;
+  font-size: 30rpx;
+  display: block;
+  border-radius: 50%;
+}
+.delete {
+  width: 200rpx;
+  height: 100%;
+  font-size: 40rpx;
+  background: #fe3c2e;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "product-display" : "/component/product-display/product-display"
+  },
+  "navigationBarTitleText": "我发布的",
+  "navigationBarTextStyle": "black"
+}

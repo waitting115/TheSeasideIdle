@@ -1,0 +1,31 @@
+<view class="all">
+  <swiper 
+    class='swiper'
+    indicator-dots='true'
+    indicator-color='rgba(0,0,0,.3)'
+    indicator-active-color='#fff'
+    autoplay="true"
+    interval='3000'
+    duration='500'
+    circular='false'
+    easing-function="default"
+    >
+    <block wx:for="{{currentMsg.picture}}" wx:key="*this" class="swiper-item-block">
+      <swiper-item class="swiper-item">
+        <image src='{{item}}' class='item-img' mode='aspectFit'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='priceBar'>
+    <view class='price'>{{currentMsg.price}}</view>
+    <view class='situation'>{{currentMsg.goodsSituation}}</view>
+  </view>
+  <view class='title'>{{currentMsg.goodsTitle}}</view>
+  <view class='introduce'>{{currentMsg.introduceText}}</view>
+  <view class='tabBar'>
+    <view wx:for="{{tabBar}}" wx:key="index" class='tabBarItem' bindtap='inFunction' data-sign='{{item.title}}'>
+      <image src='{{item.iconUrl}}' class='tabBarImg' ></image>
+      <view class='tabBarTitle'>{{item.title}}</view>
+    </view>
+  </view>
+</view>

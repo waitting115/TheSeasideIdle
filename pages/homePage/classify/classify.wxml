@@ -1,0 +1,5 @@
+<view class='all'>
+  <view class='title'>{{title}}</view>
+  <product-display id="productDisplay" recommendation='{{recommendation}}'></product-display>
+  <view class='footer'>已经到底啦亲~</view>
+</view>

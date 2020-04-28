@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "product-display" : "/component/product-display/product-display"
+  },
+  "navigationBarBackgroundColor": "#fb7c6e"
+}

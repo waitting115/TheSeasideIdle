@@ -1,0 +1,24 @@
+<view class='recommendationContent'>
+      <view class='itemContent' 
+        wx:for="{{recommendation}}" 
+        wx:for-item="item" 
+        wx:key="index" 
+        bindtouchstart="touchstart"
+        bindtouchend="touchend"
+        data-item='{{item}}'
+        data-index="{{index}}"
+        >
+        <view class='itemPictureContent'>
+          <image src='{{item.picture[0]}}' class='itemPicture' lazy-load='true' mode='aspectFill'></image>
+        </view>
+        <text class='itemGoodsTitle'>{{item.goodsTitle}}</text>
+        <view class='priceBar'>
+          <view class='itemPrice'>{{item.price}}</view>
+          <text class='itemGoodsSituation'>{{item.goodsSituation}}</text>
+        </view>
+        <view class='headPortraitBar'>
+          <image src='{{item.headPortraitUrl}}' class='itemHeadPortraitUrl'></image>
+          <view class='itemBusinessName'>{{item.userName}}</view>
+        </view>
+      </view>
+    </view>

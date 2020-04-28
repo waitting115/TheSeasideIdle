@@ -1,0 +1,22 @@
+<view class="all">
+  <view wx:for="{{myMsg}}" wx:key="*this" class='item' style='{{item.txtStyle}}' >
+    <view class='content' bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchend='touchend' bindtap='click' data-index='{{index}}'>
+      <image class='img' src='{{item.headImg}}' mode='aspectFill'></image>
+      <view class='right'>
+        <view class='Msg'>
+          <view class='userName'>{{item.userName}}</view>
+          <view class='lastMsg'>{{item.lastMsg}}</view>
+        </view>
+        <view class='prompt'>
+          <view class='timePrompt'>{{item.lastMsgTime}}</view>
+          <view class='NewMsgPrompt' wx:if="{{item.newMsgNum != 0}}">{{item.newMsgNum}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='delete' catchtap='deleteItem' data-index='{{index}}'>
+      <text>删 除</text>
+    </view>
+  </view>
+
+  <view wx:if="{{myMsg.length == 0}}">您还没有会话的人呢，赶快去逛逛吧~</view>
+</view>

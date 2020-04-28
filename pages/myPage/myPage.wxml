@@ -1,0 +1,25 @@
+<view class='all'>
+  <view class='topBar'>
+    <view class='userNickname'>{{user.userName}}</view>
+    <view class='userPicBox'>
+      <image src='{{user.headPortraitUrl}}' class='userPic'></image>
+    </view>
+  </view>
+  <view class='focusOn'>
+    <view class='myFocus' bindtap='inMyattention' data-cls='meFocus'>我关注的（{{meFocus}}）</view>
+    <view class='focusMy' bindtap='inMyattention' data-cls='focusMe'>关注我的（{{focusMe}}）</view>
+  </view>
+  <!-- 切后台 -->
+  <view class="backStage" wx:if="{{admin != -1}}" bindtap="backStage">
+    <image src='/icons/targ.png' class='myImg'></image>
+    <view class='myTitle'>切后台</view>
+    <image src='/icons/right.png' class='myRightImg'></image>
+  </view>
+  <!-- 我收藏的以下 -->
+  <view wx:for="{{myList}}" wx:key="index" class='my' data-title='{{item.myTitle}}' bindtap='inFunction'>
+    <image src='{{item.myImg}}' class='myImg'></image>
+    <view class='myTitle'>{{item.myTitle}}</view>
+    <view class='newMsgSum' wx:if="{{item.myTitle == '我的消息' && newMsgSum != 0}}">{{newMsgSum}}</view>
+    <image src='{{item.myRightImg}}' class='myRightImg'></image>
+  </view>
+</view>

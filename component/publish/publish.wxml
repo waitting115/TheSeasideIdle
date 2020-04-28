@@ -1,0 +1,39 @@
+<view class='all'>
+  <form bindsubmit="formSubmit">
+    <label for='title' class='labelTitle'>宝贝标题 : </label>
+    <input type='text' name='title' class='inputTitle' value='{{defaultValue.goodsTitle}}'></input>
+    <label for='details' class='labelDetails'>宝贝详情 ：</label>
+    <textarea id='details' name='details' class='details' value='{{defaultValue.introduceText}}'></textarea>
+    <view class='picTitle'>1~4张宝贝靓照 ：</view>
+    <view class='pictures'>
+        <view class="block" wx:for="{{publishImg}}" wx:key="index">
+          <image src='{{item}}' class='addPic' name='{{item}}'></image>
+          <image class='clickDelete' src='/icons/x.png' bindtap="deleteImg" data-index='{{index}}'></image>
+        </view>
+
+        <image wx:if="{{publishImg.length < 4}}" src='../../icons/adding.png' class='block' name='img' bindtap="choosePic"></image>
+      </view>
+    <view class='classifyTitle'>宝贝类别 ：</view>
+    <radio-group class='radioBox' bindchange='radio1Change'>
+      <label wx:for="{{classify}}" wx:key="index" wx:for-item="item"  class='radioItem' >
+        <radio value='{{item.title}}' checked='{{item.checked}}' name='classify' >{{item.title}}</radio>
+      </label>
+    </radio-group>
+    <view class='goodsSituationTitle'>新旧程度</view>
+    <radio-group class='goodsSituationRadioGroup' bindchange='radio2Change'>
+      <label class='goodsSituationRadioLabel' wx:for="{{goodsSituation}}" wx:key="index" wx:for-item="item">
+        <radio value="{{item.title}}" checked='{{item.checked}}' name='situation'>{{item.title}}</radio>
+      </label>
+    </radio-group>
+    <view class='goodsPrice'>
+      <view class='priceTitle'>心愿价格：￥</view>
+      <input type='number' class='priceInput' name='price' value='{{defaultValue.price}}'></input>
+      <view>元</view>
+    </view>
+    <view class="goodsPrice">
+        <view class="wxTitle">微信号：</view>
+        <input type='text' class="wxInput" name="wx" value='{{defaultValue.wx}}'></input>
+      </view>
+    <button type='primary' form-type='submit' class='submitBtn' name='submit'>提 交 审 核</button>
+  </form>
+</view>

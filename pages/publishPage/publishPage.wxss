@@ -1,0 +1,100 @@
+/* .all {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+.form {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  float: left;
+  background: #f2f2f2;
+}
+.labelTitle {
+  width: 25%;
+  height:70rpx;
+  background: #fff;
+  float: left;
+  padding: 3% 0 0 3%;
+  margin-top: 2%;
+  font-size: 40rpx;
+  text-align: center;
+}
+.inputTitle {
+  width: 72%;
+  height: 70rpx;
+  background: #fff;
+  font-size: 40rpx;
+  float: left;
+  padding: 2% 0 1% 0;
+  margin-top: 2%;
+}
+.labelDetails ,.picTitle ,.classifyTitle ,.goodsSituationTitle ,.goodsPrice{
+  width: 100%;
+  height: 60rpx;
+  font-size: 40rpx;
+  background: #fff;
+  margin-top: 2%;
+  padding: 1% 0 1% 3%;
+  display:  inline-block;
+}
+.details {
+  width: 100%;
+  height: 198rpx;
+  border:1px solid #ccc;
+  background: #fff;
+  padding-left: 3%;
+}
+.pictures {
+  width: 100%;
+  height: 180rpx;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.addPic {
+  width: 20%;
+  height: 140rpx;
+}
+.radioBox ,.goodsSituationRadioGroup{
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+.radioItem {
+  width: 33%;
+  height: auto;
+  padding: 1% 0 1% 0;
+}
+.goodsSituationRadioLabel {
+  width: 25%;
+  height: auto;
+  padding: 1% 0 1% 0;
+}
+.goodsPrice {
+  display: flex; 
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.priceInput {
+  width: 130rpx;
+  margin:0 2% 0 2%;
+  border: 1px solid #ccc;
+}
+.submitBtn {
+  width: 100%;
+  height: auto;
+  margin: 2% 0 3% 0;
+  background: #fff;
+} */

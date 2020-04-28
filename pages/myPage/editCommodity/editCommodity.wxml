@@ -1,0 +1,3 @@
+<view class="all">
+  <publish classify="{{classify}}" defaultValue="{{defaultValue}}" goodsSituation="{{goodsSituation}}" index="{{index}}"></publish>
+</view>

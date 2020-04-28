@@ -1,0 +1,57 @@
+/**index.wxss**/
+.all {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+
+.checkContent {
+  width: 100%;
+  height: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.checkItem {
+  width: 25%;
+  height: 180rpx;
+  margin: 2%;
+}
+.checkImg {
+  width: 100%;
+  height: 180rpx;
+  border-radius: 20%;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.cls {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 3%;
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2%;
+  border: 1px solid #ccc;
+}
+.myTitle{
+  width: 87%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-left: 5%;
+  /* border: 1px solid #ccc; */
+}
+.myRightImg{
+  width: 5%;
+  height: 40rpx;
+  /* border: 1px solid #ccc; */
+}

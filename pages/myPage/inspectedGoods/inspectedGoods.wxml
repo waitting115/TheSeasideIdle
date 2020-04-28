@@ -1,0 +1,50 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">head1</view>
+    <view class="th">head2</view>
+  </view>
+  <view class="tr bg-g">
+    <view class="td">用户名</view>
+    <view class="td">{{item.userName}}</view>
+  </view>
+  <view class="tr">
+    <view class="td">头像</view>
+    <view class="td">
+      <image class="headImg" src="{{item.headPortraitUrl}}"></image>
+    </view>
+  </view>
+  <view class="tr bg-g">
+    <view class="td">商品标题</view>
+    <view class="td">{{item.goodsTitle}}</view>
+  </view>
+  <view class="tr">
+    <view class="td">详细信息</view>
+    <view class="td">{{item.introduceText}}</view>
+  </view>
+  <view class="tr bg-g">
+    <view class="td">商品图片</view>
+    <view class="td pic">
+      <image  wx:for="{{item.picture}}" wx:for-item="itemPic" wx:key="{{index}}" src="{{itemPic}}" class="goodsImg"></image>
+    </view>
+  </view>
+  <view class="tr">
+    <view class="td">商品分类</view>
+    <view class="td">{{item.classify}}</view>
+  </view>
+  <view class="tr bg-g">
+    <view class="td">新旧程度</view>
+    <view class="td">{{item.goodsSituation}}</view>
+  </view>
+  <view class="tr">
+    <view class="td">商品价格</view>
+    <view class="td">{{item.price}}</view>
+  </view>
+  <view class="tr bg-g">
+    <view class="td">
+      <button type="primary" bindtap="primary" data-item="{{item}}">通 过</button>
+    </view>
+    <view class="td">
+      <button type="warn" bindtap="warn" data-item="{{item}}">遣 回</button>
+    </view>
+  </view>
+</view>

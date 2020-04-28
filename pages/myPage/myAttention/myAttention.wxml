@@ -1,0 +1,12 @@
+<view class="all">
+  <view class='item' wx:for="{{meFocus}}" wx:key="index" bindtap='inIndividualStore' data-openid_1='{{item.openID}}'>
+    <view class='itemLeft'>
+      <image src="{{item.headPortraitUrl}}" class='itemHeadImg'></image>
+      <view class='itemName'>
+        <view>{{item.userName}}</view>
+      </view>
+    </view>
+    <button class='itemBtn' catchtap='clickBtn' data-item='{{item}}' data-cls='focusOn' wx:if="{{item.addAttention}}">加关注</button>
+    <button class='itemBtn' catchtap='clickBtn' data-item='{{item}}' data-cls='focusedOn' wx:else>已关注</button>
+  </view>
+</view>

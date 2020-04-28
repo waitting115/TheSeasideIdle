@@ -1,0 +1,15 @@
+<view class="all">
+  <view class='topBar'>
+    <view class='userMsg'>
+      <image src='{{currentUser.headPortraitUrl}}' class='userHead' mode='aspectFill'></image>
+      <view class='userName'>{{currentUser.userName}}</view>
+    </view>
+    <button class='focusOn' wx:if="{{btnDisplay}}" bindtap='focusOn'>+关注</button>
+    <button class='focusedOn' wx:else bindtap='focusedOn'>已关注</button>
+  </view>
+  <view class='spzs'> - - - / / 商 品 展 示 / / - - - </view>
+  <view class='goodsShowContent'>
+    <product-display recommendation='{{recommendation}}'></product-display>
+  </view>
+  <view class='footer'>已经到底啦亲~</view>
+</view>

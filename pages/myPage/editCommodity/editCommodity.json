@@ -1,0 +1,10 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff3b44",
+    "navigationBarTitleText": "编辑商品",
+    "navigationBarTextStyle": "white",
+
+  "usingComponents": {
+    "publish" : "/component/publish/publish"
+  }
+}

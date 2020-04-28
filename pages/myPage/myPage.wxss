@@ -1,0 +1,95 @@
+.all {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+.topBar {
+  width: 100%;
+  height: 230rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff3b44;
+
+}
+.userNickname {
+  width: auto;
+  height: 30%;
+  margin-left: 10%;
+  font-size: 60rpx;
+  color: #fff;
+}
+.userPic {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.userPicBox {
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  border-radius: 20rpx;
+  top: 50rpx;
+  right: 60rpx;
+}
+
+.focusOn {
+  width: 100%;
+  height: 80rpx;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-top: 2%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.myFocus ,.focusMy{
+  width: 50%;
+  height: 80rpx;
+  padding-left: 9%;
+  line-height: 80rpx;
+}
+.my ,.backStage{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 3%;
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.myImg{
+  width: 8%;
+  height: 60rpx;
+  margin-left: 8%;
+}
+.myTitle{
+  width: 70%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-left: 5%;
+}
+.myRightImg{
+  width: 5%;
+  height: 40rpx;
+}
+.newMsgSum {
+  width: 45rpx;
+  height: 43rpx;
+  /* margin-bottom: 50rpx; */
+  text-align: center;
+  line-height: 43rpx;
+  color: #fff;
+  background: #f44e2f;
+  font-size: 30rpx;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  right: 100rpx;
+}

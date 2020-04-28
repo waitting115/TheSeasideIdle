@@ -1,0 +1,39 @@
+<view class="all">
+  <view class='contentTop'>
+    <form class='topBar'>
+      <view class='iconBar'>
+        <image src='https://www.tangchaolizi.club/xchengxu/public/images/icons/search.png' class='icon'></image>
+        <input type='text' placeholder='  搜索您想要的商品' class='input' bindtap="inSearch"></input>
+        <!-- 功能：实现历史记录功能和，和实时搜索提示 -->
+      </view>
+      <!-- <input type='button' value='搜索' class="btn"></input> -->
+      <!-- <button type='submit' class='btn'>搜 索</button> -->
+    </form>
+    <image src="{{topUrl}}" class='topImg'></image>
+  </view>
+
+  <view class='classify'>
+    <view wx:for="{{classify}}" wx:for-item="classItem" wx:key="index" class='classItem' data-title="{{classItem.title}}" bindtap='onClassify'>
+      <image src='{{classItem.iconUrl}}' class='classIcon'></image>
+      <view class='classTitle'>{{classItem.title}}</view>
+    </view>
+  </view>
+
+  <view>
+    <view class='titleBar'>个性推荐</view>
+      <product-display
+        recommendation='{{recommendation}}'
+        bindindex = "index"
+      ></product-display>
+  </view>
+  <view>
+    <view class='titleBar'>全部宝贝</view>
+      <product-display
+        recommendation='{{unRecommendation}}'
+        bindindex = "index"
+      ></product-display>
+  </view>
+
+
+  <view class='footer'>已经到底啦亲~</view>
+</view>
