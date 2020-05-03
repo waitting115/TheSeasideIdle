@@ -160,5 +160,6 @@
   height: auto;
   border-top: 1px solid #ccc;
   text-align: center;
+  padding: 1%;
   color: #8c8c8c;
 }

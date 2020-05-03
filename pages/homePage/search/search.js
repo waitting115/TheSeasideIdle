@@ -39,6 +39,27 @@ Page({
       });
     };
   },
+  delete: function () {
+    let that = this;
+    wx.showModal({
+			title: '提示',
+			content: '您确定删除所有历史搜索吗？',
+			success: function(res) {
+				if (res.confirm) {
+        // console.log('用户点击确定')
+        app.globalData.user.searchHistory = [];
+        that.onLoad();
+        console.log(that.searchHistory)
+				} else if (res.cancel) {
+				console.log('用户点击取消')
+				}
+			}
+		})
+  },
+  check: function (e) {
+    let input = document.getElementById('searchInput');
+    console.log(e);
+  },
   /*生命周期函数--监听页面卸载*/
   onUnload: function () {
 

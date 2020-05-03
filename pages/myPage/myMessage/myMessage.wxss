@@ -106,3 +106,11 @@
   justify-content: center;
   align-items: center;
 }
+.empty-prompt{
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}

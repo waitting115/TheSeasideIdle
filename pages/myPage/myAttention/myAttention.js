@@ -19,13 +19,11 @@ Page({
           // console.log(allUser[j].openID);
           // console.log(user.meFocus.indexOf("snwn"))
           if(user.meFocus.indexOf(allUser[j].openID)+1) {//因为第一位的下标是0，不会通过if语句
-            
             // console.log(user.meFocus.indexOf(allUser[j].openID))
             meFocus[i].addAttention = false;
           } else {
             meFocus[i].addAttention = true;
           }
-          
         }
       }
     }
@@ -34,7 +32,7 @@ Page({
     })
     // console.log(this.data.meFocus)
   },
-  //思路:跳转的时候在全局变量里设置一个变量cate_id,调到category.js中后.调取全局变量里的cate_id,用完后,再把这个变量清除掉.--这是一个思想，但是这里并没有使用成功，最后还是使用的navigateTo方法，官网说不能夸tabBar但是实际上还是可以的
+  //思路:跳转的时候在全局变量里设置一个变量cate_id,调到category.js中后.调取全局变量里的cate_id,用完后,再把这个变量清除掉.--这是一个思想，但是这里并没有使用成功，最后还是使用的navigateTo方法，官网说不能跨tabBar但是实际上还是可以的
   inIndividualStore:function (e) {
     let openID_1 = e.currentTarget.dataset.openid_1;
     //app.globalData.openID_1 = openID_1;//设置全局变量

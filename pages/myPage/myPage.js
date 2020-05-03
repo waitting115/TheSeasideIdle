@@ -41,13 +41,13 @@ Page({
       },
     ]
   },
-  onLoad: function (e) {
+  onShow: function (e) {
     let newMsgSum = 0;
     let user = app.globalData.user;
     for (let i = 0, len = user.myMessage.length; i<len; i++) {
       newMsgSum += user.myMessage[i].newMsgNum;
     }
-    
+    // console.log(newMsgSum)
     this.setData({
       meFocus : app.globalData.user.meFocus.length,
       focusMe : app.globalData.user.focusMe.length,
@@ -64,6 +64,11 @@ Page({
     })
     // console.log(this.data.admin);
   },
+  // onShow: function () {
+  //   this.setData({
+  //     newMsgSum: app.globalData.user.myMessage
+  //   })
+  // },
   inMyattention: function (e) {
     if(e.currentTarget.dataset.cls == "meFocus") {
       let msg = JSON.stringify(app.globalData.user.meFocus);

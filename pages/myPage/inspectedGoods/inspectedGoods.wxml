@@ -24,7 +24,7 @@
   <view class="tr bg-g">
     <view class="td">商品图片</view>
     <view class="td pic">
-      <image  wx:for="{{item.picture}}" wx:for-item="itemPic" wx:key="{{index}}" src="{{itemPic}}" class="goodsImg"></image>
+      <image  wx:for="{{item.picture}}" wx:for-item="itemPic" wx:key="index" src="{{itemPic}}" class="goodsImg"></image>
     </view>
   </view>
   <view class="tr">

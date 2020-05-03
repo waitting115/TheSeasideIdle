@@ -167,21 +167,35 @@ Page({
     registeredNum: 0,
     productsShelvesNum: 0,
     removedShelvesNum: 0,
-    // inspectedGoods: []
+    inspectedGoods: []
   },
   onLoad: function (options) {
-    //计算状态为AUDIT的商品，预计在后端写
-    this.setData({
-      registeredNum: app.globalData.registeredNum,
-      productsShelvesNum: app.globalData.productsShelvesNum,
-      removedShelvesNum: app.globalData.removedShelvesNum,
-      // inspectedGoods: app.globalData.inspectedGoods
-    })
-    // console.log(this.data.inspectedGoods)
+ 
   },
-  //页面加载就触发
   onShow: function () {
-    this.onLoad();
+    let alluser = app.globalData.allUser;
+    let inspectedGoods = [];
+    let registeredNum = 1;
+    let productsShelvesNum = 0;
+    let removedShelvesNum = 0;
+    for(let i of alluser) {
+      registeredNum ++;
+      for(let j of i.goods) {
+        if(j.state === 'AUDIT') {
+          inspectedGoods.push(j);
+        } else if (j.state === 'UP') {
+          productsShelvesNum ++;
+        } else if (j.state === 'OUT') {
+          removedShelvesNum ++;
+        }
+      }
+    };
+    this.setData({
+      inspectedGoods: inspectedGoods,
+      registeredNum: registeredNum,
+      productsShelvesNum: productsShelvesNum,
+      removedShelvesNum: removedShelvesNum
+    })
   },
   checkImgTap: function (res) {
     // console.log(res.currentTarget.dataset.item)

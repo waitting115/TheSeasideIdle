@@ -25,6 +25,10 @@ Page({
   },
   click: function (e) {
     //进入到聊天界面
+    wx.showModal({
+			title: '温馨提示',
+			content: '功能暂未上线，敬请期待~'
+		})
   },
   //实现左滑删除有两种效果：第一种是左滑一点删除块直接运动出来，另一种是判断用户左滑的长度与删除块大小作比较，大于一半则划出来，小于一半则缩回去，此处暂时用第二种方法
   touchstart: function (e) {
@@ -91,5 +95,6 @@ Page({
     this.setData({
       myMsg: myMsg
     })
+    // console.log(app.globalData.user.myMessage);
   }
 })

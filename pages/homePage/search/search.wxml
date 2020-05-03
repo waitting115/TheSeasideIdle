@@ -4,7 +4,7 @@
     <view class="topBar">
       <image src='https://www.tangchaolizi.club/xchengxu/public/images/icons/search.png' class='icon'></image>
       <em class="em">|</em>
-      <input type="text" placeholder="{{nowTopSearch}}" name='searchInput' class="searchInput" bindinput="userInput"></input>   
+      <input id="searchInput" type="text" placeholder="{{nowTopSearch}}" name='searchInput' class="searchInput" bindinput="userInput"></input>   
       <em class="em">|</em>   
       <view class="submitBtn" type="submit" name='submit' bindtap="">搜  索</view>
       <!-- <button type="submit" form-type='submit' class='submitBtn' name='submit'>搜 索</button> -->
@@ -16,25 +16,25 @@
     <view class="historyBar">
       <view class="historyTitle">历史搜索</view>
       <view class="deleteHistory" bindtap="deleteHistory">
-        <image class="deleteImg" src="https://www.tangchaolizi.club/xchengxu/public/images/icons/trash.jpg"></image>
+        <image class="deleteImg" src="https://www.tangchaolizi.club/xchengxu/public/images/icons/trash.jpg" bindtap="delete"></image>
       </view>
     </view>
     <!-- 历史搜索正文 -->
     <view class="historyContent">
-      <block wx:for="{{searchHistory}}" wx:key="{{index}}">
-        <text class="itemText">{{item}}</text>
+      <block wx:for="{{searchHistory}}" wx:key="index">
+        <text class="itemText" bindtap="check" data-text = "{{item}}">{{item}}</text>
       </block>
     </view>
   </view>
-  <!-- 今日热搜条 -->
+  <!-- 今日热搜 -->
   <view class="todayHotSearchBar">
     <image class="fire" src="https://www.tangchaolizi.club/xchengxu/public/images/icons/hot.png"></image>
     <text class="todayHotSearchText">今日热搜</text>
   </view>
   <!-- 今日热搜正文 -->
   <view class="todayHotSearchContent">
-    <block wx:for="{{topSearch}}" wx:key="{{index}}">
-      <text class="HotItemText">{{item}}</text>
+    <block wx:for="{{topSearch}}" wx:key="index">
+      <text class="HotItemText" bindtap="check" data-text="{{item}}">{{item}}</text>
     </block>
   </view>
 

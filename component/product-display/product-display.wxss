@@ -92,3 +92,9 @@
   -webkit-box-orient: vertical;/*	从上向下垂直排列子元素。*/
   -webkit-line-clamp:1; /*限制在一个块元素显示的文本的行数*/
 }
+.zu {
+  font-size: 0.8rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #f40;
+}

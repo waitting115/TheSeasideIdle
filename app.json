@@ -22,7 +22,8 @@
     "pages/myPage/feedback/feedback",
     "component/publish/publish",
     "pages/myPage/editCommodity/editCommodity",
-    "pages/myPage/inspectedGoods/inspectedGoods"
+    "pages/myPage/inspectedGoods/inspectedGoods",
+    "component/footer/footer"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,20 +39,20 @@
       {
         "pagePath": "pages/homePage/homePage",
         "text": "首页",
-        "iconPath": "icons/dollar6.png",
-        "selectedIconPath": "icons/dollar4.png"
+        "iconPath": "/icons/dollar6.png",
+        "selectedIconPath": "/icons/dollar4.png"
       },
       {
         "pagePath": "pages/publishPage/publishPage",
         "text": "发布",
-        "iconPath": "icons/dollar3.png",
-        "selectedIconPath": "icons/dollar7.png"
+        "iconPath": "/icons/dollar3.png",
+        "selectedIconPath": "/icons/dollar7.png"
       },
       {
         "pagePath": "pages/myPage/myPage",
         "text": "我的",
-        "iconPath": "icons/dollar.png",
-        "selectedIconPath": "icons/dollar5.png"
+        "iconPath": "/icons/dollar.png",
+        "selectedIconPath": "/icons/dollar5.png"
       }
     ]
   },

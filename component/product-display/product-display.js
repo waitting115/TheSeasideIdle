@@ -14,6 +14,7 @@ Component({
   //私有数据，组件的初始数据
   data: {
     startTime: 0,
+    zu:false
   },
   //组件的方法列表： methods
   methods: {
@@ -33,11 +34,10 @@ Component({
       this.triggerEvent("item", item)
     },
     touchend: function (e) {
-      // console.log('yes');
       let endTime = e.timeStamp;
       let startTime = this.data.startTime;
       //计算用户触摸时间是否超过一秒，用来判断用户是长按还是点击
-      if(endTime - startTime < 1000) {//点击
+      if(endTime - startTime < 100) {//点击（解决滑动造成点击事件）
         var item = JSON.stringify(e.currentTarget.dataset.item);//obj-->json
         wx.navigateTo({
           url: '/pages/homePage/goodsDetails/goodsDetails?item=' + item

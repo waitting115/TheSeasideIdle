@@ -41,13 +41,13 @@
 }
 .searchHistory {
  width: 100%;
- height:350rpx;
+ height:auto;
  background: #fff;
  margin-top: 20rpx;
 }
 .historyBar {
   width: 100%;
-  height: 65rpx;
+  height: auto;
   /* background: red; */
   display: flex;
   flex-flow: row nowrap;
@@ -72,7 +72,8 @@
 }
 .historyContent {
   width: 100%;
-  height: 275rpx;
+  /* height: 275rpx; */
+  height: auto;
   border-top: 1px solid #ccc;
   overflow: hidden;
 }
@@ -80,7 +81,7 @@
   display: inline-block;
   background: #e0e0e0;
   margin: 1%;
-  padding: 1%;
+  padding:0.5% 1%;
   border-radius: 10rpx;
 }
 .todayHotSearchBar {
@@ -100,7 +101,8 @@
 }
 .todayHotSearchContent {
   width: 100%;
-  height: 275rpx;
+  /* height: 275rpx; */
+  height: auto;
   background: #fff;
   margin-bottom: 10rpx;
   border-top: 1rpx solid #ccc;

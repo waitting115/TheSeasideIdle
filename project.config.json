@@ -7,10 +7,13 @@
 		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
 		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
@@ -23,7 +26,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
 	"appid": "wxf87440c296fb6767",
-	"projectname": "web",
+	"projectname": "TheSeasideIdle",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

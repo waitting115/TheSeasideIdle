@@ -13,11 +13,10 @@ App({
     // 登录（查询用户code，然后发送到后台，后台向微信官方换取openID和session_key
     wx.login({
       success: res => {
-        console.log('登陆成功',res.code);
+        // console.log('登陆成功',res.code);
         if(res.code) {
-          console.log(res);
           wx.request({
-            url: 'https://www.tangchaolizi.club:11443/login',
+            url: 'https://www.tangchaolizi.club:11443/login', 
             data: {
               code: res.code
             },
@@ -86,12 +85,12 @@ App({
     // wawa : 1
   },
   globalData: {
-    topUrl: "../../images/school-7a.jpg",
+    topUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/school-7a.jpg",
     userInfo: null,
     openid: '',
     url:'https://www.tangchaolizi.club:11443',
-    appid: 'wxf87440c296fb6767',
-    secret: '2af9b3a3c4afcec7371f4be3d557a250',
+    // appid: 'wxf87440c296fb6767',
+    // secret: '2af9b3a3c4afcec7371f4be3d557a250',
     //总注册人数
     registeredNum: 99,
     //所有注册用户
@@ -102,7 +101,7 @@ App({
     totalProductsShelves: [],
     //总下架商品
     removedShelvesNum: 88,
-    //是所有下架商品
+    //所有下架商品
     totalRemovedShelves: [],
     // 过去七天的用户登录数据：
     userLoginChangeData: [12, 23, 34, 45, 56, 67, 78],
@@ -265,7 +264,7 @@ App({
     //user不存数据库
     user: {
       userName: "five",
-      headPortraitUrl: "../../images/userHead/cat.jpg",
+      headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/cat.jpg",
       openID: "five",
       recommendation: [
         "考研资料",
@@ -301,14 +300,14 @@ App({
       goods: [
         {
           userName: "five",
-          headPortraitUrl: "/images/userHead/cat.jpg",
+          headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/cat.jpg",
           openID: "five",
           goodsID: 1,
           picture: [
-            "/images/goods/falbala.png",
-            "/images/goods/falbala-g.png",
-            "/images/goods/falbala.png",
-            "/images/goods/falbala-g.png"
+            "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/falbala.png",
+            "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/falbala-g.png",
+            "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/falbala.png",
+            "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/falbala-g.png"
           ],
           goodsTitle: "荷叶边衬衫系带V领打底衫上衣女",
           price: "￥20",
@@ -320,12 +319,12 @@ App({
         },
         {
           userName: "five",
-          headPortraitUrl: "/images/userHead/cat.jpg",
+          headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/cat.jpg",
           openID: "five",
           goodsID: 2,
           picture: [
-            "/images/goods/solidStateDrives.png",
-            "/images/goods/solidStateDrives1.png"
+            "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/solidStateDrives.png",
+            "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/solidStateDrives1.png"
           ],
           goodsTitle: "Kingston/金士顿固态硬盘SA400S37/240G 笔记本",
           price: "￥120",
@@ -337,12 +336,12 @@ App({
         },
         {
           userName: "five",
-          headPortraitUrl: "/images/userHead/cat.jpg",
+          headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/cat.jpg",
           openID: "five",
           goodsID: 3,
           picture: [
-            "/images/goods/link.png",
-            "/images/goods/link1.png"
+            "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/link.png",
+            "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/link1.png"
           ],
           goodsTitle: "OPPO闪充数据线",
           price: "￥10",
@@ -352,30 +351,13 @@ App({
           wx: 'wx',
           state: 'UP'
         },
-        {
-          userName: "five",
-          headPortraitUrl: "/images/userHead/cat.jpg",
-          openID: "five",
-          goodsID: 4,
-          picture: [
-            "/images/goods/falbala.png",
-            "/images/goods/falbala-g.png"
-          ],
-          goodsTitle: "荷叶边衬衫系带V领打底衫上衣女",
-          price: "￥20",
-          goodsSituation: "9成新",
-          introduceText: "款式：V领，荷叶边 颜色：白色",
-          classify: "服装鞋帽",
-          wx: 'wx',
-          state: 'AUDIT'
-        },
       ]
     },
     //allUser
     allUser: [
       {
         userName: "five",
-        headPortraitUrl: "/images/userHead/cat.jpg",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/cat.jpg",
         openID: "five",
         recommendation: [
           "考研资料",
@@ -387,12 +369,12 @@ App({
         goods: [
           {
             userName: "five",
-            headPortraitUrl: "/images/userHead/cat.jpg",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/cat.jpg",
             openID: "five",
             goodsID: 4,
             picture: [
-              "/images/goods/falbala.png",
-              "/images/goods/falbala-g.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/falbala.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/falbala-g.png"
             ],
             goodsTitle: "荷叶边衬衫系带V领打底衫上衣女",
             price: "￥20",
@@ -404,12 +386,12 @@ App({
           },
           {
             userName: "five",
-            headPortraitUrl: "/images/userHead/cat.jpg",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/cat.jpg",
             openID: "five",
             goodsID: 5,
             picture: [
-              "/images/goods/solidStateDrives.png",
-              "/images/goods/solidStateDrives1.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/solidStateDrives.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/solidStateDrives1.png"
             ],
             goodsTitle: "Kingston/金士顿固态硬盘SA400S37/240G 笔记本",
             price: "￥120",
@@ -421,12 +403,12 @@ App({
           },
           {
             userName: "five",
-            headPortraitUrl: "/images/userHead/cat.jpg",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/cat.jpg",
             openID: "five",
             goodsID: 6,
             picture: [
-              "/images/goods/link.png",
-              "/images/goods/link1.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/link.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/link1.png"
             ],
             goodsTitle: "OPPO闪充数据线",
             price: "￥10",
@@ -440,7 +422,7 @@ App({
       },
       {
         userName: "零碎记忆",
-        headPortraitUrl: "/images/userHead/K.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/K.png",
         openID: "lsjy",
         recommendation: [
           "生活百货",
@@ -452,13 +434,13 @@ App({
         goods: [
           {
             userName: "零碎记忆",
-            headPortraitUrl: "/images/userHead/K.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/K.png",
             openID: "lsjy",
             goodsID: 7,
             picture: [
-              "/images/goods/pick-c.png",
-              "/images/goods/pick-m.png",
-              "/images/goods/pick-c.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/pick-c.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/pick-m.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/pick-c.png"
             ],
             goodsTitle: "甜美上衣小清新宽松兔耳朵长袖t恤",
             price: "￥17",
@@ -472,7 +454,7 @@ App({
       },
       {
         userName: "三年五年",
-        headPortraitUrl: "/images/userHead/V.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/V.png",
         openID: "snwn",
         recommendation: [
           "图书",
@@ -484,11 +466,11 @@ App({
         goods: [
           {
             userName: "三年五年",
-            headPortraitUrl: "/images/userHead/V.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/V.png",
             openID: "snwn",
             goodsID: 8,
             picture: [
-              "/images/goods/math.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/math.png"
             ],
             goodsTitle: "2018李永乐考研数学",
             price: "￥20",
@@ -500,13 +482,13 @@ App({
           },
           {
             userName: "三年五年",
-            headPortraitUrl: "/images/userHead/V.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/V.png",
             openID: "snwn",
             goodsID: 9,
             picture: [
-              "/images/goods/GameControllers.png",
-              "/images/goods/GameControllers1.png",
-              "/images/goods/GameControllers2.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/GameControllers.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/GameControllers1.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/GameControllers2.png"
             ],
             goodsTitle: "手机吃鸡神器游戏手柄",
             price: "￥10",
@@ -518,12 +500,12 @@ App({
           },
           {
             userName: "三年五年",
-            headPortraitUrl: "/images/userHead/V.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/V.png",
             openID: "snwn",
             goodsID: 10,
             picture: [
-              "/images/goods/RedAndWhite.png",
-              "/images/goods/BlackAndBlue.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/RedAndWhite.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/BlackAndBlue.png"
             ],
             goodsTitle: "雷克斯变速",
             price: "￥20",
@@ -535,12 +517,13 @@ App({
           },
           {
             userName: "三年五年",
-            headPortraitUrl: "/images/userHead/V.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/V.png",
             openID: "snwn",
             goodsID: 11,
             picture: [
-              "/images/goods/watermelon.png",
-              "/images/goods/watermelon1.png",            ],
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/watermelon.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/watermelon1.png",
+            ],
             goodsTitle: "冰镇西瓜",
             price: "￥5",
             goodsSituation: "全新",
@@ -553,7 +536,7 @@ App({
       },
       {
         userName: "我想做一个坏孩纸",
-        headPortraitUrl: "/images/userHead/U.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/U.png",
         openID: "wxzyghhz",
         recommendation: [
           "其他",
@@ -565,16 +548,16 @@ App({
         goods: [
           {
             userName: "我想做一个坏孩纸",
-            headPortraitUrl: "/images/userHead/U.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/U.png",
             openID: "wxzyghhz",
             goodsID: 12,
             picture: [
-              "/images/goods/English.png",
-              "/images/goods/English1.png",
-              "/images/goods/English.png",
-              "/images/goods/English.png",
-              "/images/goods/English1.png",
-              "/images/goods/English.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/English.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/English1.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/English.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/English.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/English1.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/English.png"
             ],
             goodsTitle: "考研英语词汇",
             price: "￥10",
@@ -588,7 +571,7 @@ App({
       },
       {
         userName: "beautiful°",
-        headPortraitUrl: "/images/userHead/X.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/X.png",
         openID: "beautiful",
         recommendation: [
           "美妆美品",
@@ -600,13 +583,13 @@ App({
         goods: [
           {
             userName: "beautiful°",
-            headPortraitUrl: "/images/userHead/X.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/X.png",
             openID: "beautiful",
             goodsID: 13,
             picture: [
-              "/images/goods/radiator.png",
-              "/images/goods/radiator1.png",
-              "/images/goods/radiator2.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/radiator.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/radiator1.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/radiator2.png"
             ],
             goodsTitle: "散热器",
             price: "￥19",
@@ -620,7 +603,7 @@ App({
       },
       {
         userName: "花巷",
-        headPortraitUrl: "/images/userHead/A.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/A.png",
         openID: "hx",
         recommendation: [
           "考研资料",
@@ -632,11 +615,11 @@ App({
         goods: [
           {
             userName: "花巷",
-            headPortraitUrl: "/images/userHead/A.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/A.png",
             openID: "hx",
             goodsID: 14,
             picture: [
-              "/images/goods/phone.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/phone.png"
             ],
             goodsTitle: "Huawei/华为 P30 天空之境",
             price: "￥3200",
@@ -648,11 +631,11 @@ App({
           },
           {
             userName: "花巷",
-            headPortraitUrl: "/images/userHead/A.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/A.png",
             openID: "hx",
-            goodsID: 16,
+            goodsID: 15,
             picture: [
-              "/images/goods/5book.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/5book.png"
             ],
             goodsTitle: "提高自身的图书",
             price: "￥5",
@@ -664,27 +647,11 @@ App({
           },
           {
             userName: "花巷",
-            headPortraitUrl: "/images/userHead/A.png",
-            openID: "hx",
-            goodsID: 16,
-            picture: [
-              "/images/goods/5book.png"
-            ],
-            goodsTitle: "提高自身的图书",
-            price: "￥5",
-            goodsSituation: "9成新",
-            introduceText: "基本没翻过，每本5元，五本20元",
-            classify: "图书",
-            wx: 'wx',
-            state: 'UP'
-          },
-          {
-            userName: "花巷",
-            headPortraitUrl: "/images/userHead/A.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/A.png",
             openID: "hx",
             goodsID: 17,
             picture: [
-              "/images/goods/fan.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/fan.png"
             ],
             goodsTitle: "小风扇",
             price: "￥15",
@@ -698,7 +665,7 @@ App({
       },
       {
         userName: "我愿站在风口",
-        headPortraitUrl: "/images/userHead/C.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/C.png",
         openID: "wyzzfk",
         recommendation: [
           "球类运动",
@@ -710,12 +677,12 @@ App({
         goods: [
           {
             userName: "我愿站在风口",
-            headPortraitUrl: "/images/userHead/C.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/C.png",
             openID: "wyzzfk",
             goodsID: 18,
             picture: [
-              "/images/goods/book.png",
-              "/images/goods/book1.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/book.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/book1.png"
             ],
             goodsTitle: "图书",
             price: "￥5",
@@ -729,7 +696,7 @@ App({
       },
       {
         userName: "风中追风",
-        headPortraitUrl: "/images/userHead/P.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/P.png",
         openID: "fzzf",
         recommendation: [
           "生活百货",
@@ -741,17 +708,17 @@ App({
         goods: [
           {
             userName: "风中追风",
-            headPortraitUrl: "/images/userHead/P.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/P.png",
             openID: "fzzf",
             goodsID: 19,
             picture: [
-              "/images/goods/paper.png",
-              "/images/goods/paper1.png",
-              "/images/goods/paper.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/paper.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/paper1.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/paper.png"
             ],
             goodsTitle: "纸抽",
             price: "￥0.5",
-            goodsSituation: "成新",
+            goodsSituation: "全新",
             introduceText: "蓝漂竹浆抽纸整箱婴儿餐巾纸0.5元一包",
             classify: "生活百货",
             wx: 'wx',
@@ -759,12 +726,12 @@ App({
           },
           {
             userName: "风中追风",
-            headPortraitUrl: "/images/userHead/P.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/P.png",
             openID: "fzzf",
             goodsID: 20,
             picture: [
-              "/images/goods/ThrowingArmDevice.png",
-              "/images/goods/ThrowingArmDevice1.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/ThrowingArmDevice.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/ThrowingArmDevice1.png"
             ],
             goodsTitle: "臂力器",
             price: "￥10",
@@ -772,15 +739,15 @@ App({
             introduceText: "30公斤",
             classify: "健身器材",
             wx: 'wx',
-            state: 'UP'
+            state: 'AUDIT'
           },
           {
             userName: "风中追风",
-            headPortraitUrl: "/images/userHead/P.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/P.png",
             openID: "fzzf",
             goodsID: 21,
             picture: [
-              "/images/goods/basketball.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/basketball.png"
             ],
             goodsTitle: "NBA斯伯丁/SpaldingExtreme印花系列",
             price: "￥50",
@@ -794,7 +761,7 @@ App({
       },
       {
         userName: "泰菲",
-        headPortraitUrl: "/images/userHead/N.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/N.png",
         openID: "tf",
         recommendation: [
           "游戏交易",
@@ -806,13 +773,13 @@ App({
         goods: [
           {
             userName: "泰菲",
-            headPortraitUrl: "/images/userHead/N.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/N.png",
             openID: "tf",
             goodsID: 22,
             picture: [
-              "/images/goods/powerRoller.png",
-              "/images/goods/powerRoller1.png",
-              "/images/goods/powerRoller2.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/powerRoller.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/powerRoller1.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/powerRoller2.png"
             ],
             goodsTitle: "健腹轮",
             price: "￥10",
@@ -824,14 +791,14 @@ App({
           },
           {
             userName: "泰菲",
-            headPortraitUrl: "/images/userHead/N.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/N.png",
             openID: "tf",
             goodsID: 23,
             picture: [
-              "/images/goods/dior.png",
-              "/images/goods/dior1.png",
-              "/images/goods/dior2.png",
-              "/images/goods/dior3.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/dior.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/dior1.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/dior2.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/dior3.png"
             ],
             goodsTitle: "Dior/迪奥",
             price: "￥200",
@@ -843,14 +810,14 @@ App({
           },
           {
             userName: "泰菲",
-            headPortraitUrl: "/images/userHead/N.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/N.png",
             openID: "tf",
             goodsID: 24,
             picture: [
-              "/images/goods/EyeShadow.png",
-              "/images/goods/EyeShadow1.png",
-              "/images/goods/EyeShadow2.png",
-              "/images/goods/EyeShadow3.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/EyeShadow.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/EyeShadow1.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/EyeShadow2.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/EyeShadow3.png",
             ],
             goodsTitle: "完美日记光影星河九色眼影盘",
             price: "￥20",
@@ -864,7 +831,7 @@ App({
       },
       {
         userName: "城河",
-        headPortraitUrl: "/images/userHead/B.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/B.png",
         openID: "ch",
         recommendation: [
           "手机硬件",
@@ -876,13 +843,13 @@ App({
         goods: [
           {
             userName: "城河",
-            headPortraitUrl: "/images/userHead/B.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/B.png",
             openID: "ch",
             goodsID: 25,
             picture: [
-              "/images/goods/BadmintonRacket.png",
-              "/images/goods/BadmintonRacket1.png",
-              "/images/goods/BadmintonRacket2.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/BadmintonRacket.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/BadmintonRacket1.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/BadmintonRacket2.png"
             ],
             goodsTitle: "WITESS羽毛球拍双单拍2支套装正品",
             price: "￥30",
@@ -896,7 +863,7 @@ App({
       },
       {
         userName: "酒乃鱼",
-        headPortraitUrl: "/images/userHead/I.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/I.png",
         openID: "jny",
         recommendation: [
           "考研资料",
@@ -908,11 +875,11 @@ App({
         goods: [
           {
             userName: "酒乃鱼",
-            headPortraitUrl: "/images/userHead/I.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/I.png",
             openID: "jny",
             goodsID: 26,
             picture: [
-              "/images/goods/whereas.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/whereas.png"
             ],
             goodsTitle: "LOL游戏账号",
             price: "￥6",
@@ -926,7 +893,7 @@ App({
       },
       {
         userName: "小小怪",
-        headPortraitUrl: "/images/userHead/O.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/O.png",
         openID: "xxg",
         recommendation: [
           "租好物",
@@ -938,13 +905,13 @@ App({
         goods: [
           {
             userName: "小小怪",
-            headPortraitUrl: "/images/userHead/O.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/O.png",
             openID: "xxg",
             goodsID: 27,
             picture: [
-              "/images/goods/kite.png",
-              "/images/goods/kite1.png",
-              "/images/goods/kite2.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/kite.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/kite1.png",
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/kite2.png"
             ],
             goodsTitle: "风筝",
             price: "￥20",
@@ -954,29 +921,11 @@ App({
             wx: 'wx',
             state: 'UP'
           },
-          {
-            userName: "小小怪",
-            headPortraitUrl: "/images/userHead/O.png",
-            openID: "xxg",
-            goodsID: 27,
-            picture: [
-              "/images/goods/kite.png",
-              "/images/goods/kite1.png",
-              "/images/goods/kite2.png"
-            ],
-            goodsTitle: "风筝",
-            price: "￥20",
-            goodsSituation: "9成新",
-            introduceText: "2米草原+10米尾，20自动锁轮,500米线",
-            classify: "租好物",
-            wx: 'wx',
-            state: 'AUDIT'
-          },
         ]
       },
       {
         userName: "大男孩！",
-        headPortraitUrl: "/images/userHead/R.png",
+        headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/R.png",
         openID: "dnh",
         recommendation: [
           "服装鞋帽",
@@ -988,15 +937,15 @@ App({
         goods: [
           {
             userName: "大男孩！",
-            headPortraitUrl: "/images/userHead/R.png",
+            headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/R.png",
             openID: "dnh",
             goodsID: 28,
             picture: [
-              "/images/goods/gobang.png"
+              "https://www.tangchaolizi.club/xchengxu/public/images/image/goods/gobang.png"
             ],
             goodsTitle: "五子棋",
             price: "￥5",
-            goodsSituation: "成新",
+            goodsSituation: "9成新",
             introduceText: "没玩过几回",
             classify: "其他",
             wx: 'wx',

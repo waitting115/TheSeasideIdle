@@ -7,6 +7,7 @@
     </view>
   </view>
   <view class='footer'>已经到底啦亲~</view>
+  <!-- <footer></footer> -->
 
   <view class='null' wx:if='{{myClt.length == 0}}'>您没有收藏任何东西，赶快去逛逛吧~</view>
 </view>

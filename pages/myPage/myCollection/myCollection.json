@@ -1,4 +1,8 @@
 {
   "navigationBarTitleText": "我收藏的",
-  "navigationBarTextStyle": "black"
+  "navigationBarTextStyle": "black",
+
+  "usingComponents": {
+    "footer": "/component/footer/footer"
+  }
 }

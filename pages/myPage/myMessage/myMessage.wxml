@@ -18,5 +18,5 @@
     </view>
   </view>
 
-  <view wx:if="{{myMsg.length == 0}}">您还没有会话的人呢，赶快去逛逛吧~</view>
+  <view class="empty-prompt" wx:if="{{myMsg.length == 0}}"><text>您还没有会话的人呢，赶快去逛逛吧~</text></view>
 </view>
