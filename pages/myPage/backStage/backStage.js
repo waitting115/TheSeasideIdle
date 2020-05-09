@@ -167,7 +167,8 @@ Page({
     registeredNum: 0,
     productsShelvesNum: 0,
     removedShelvesNum: 0,
-    inspectedGoods: []
+    inspectedGoods: [],
+    feedbackMsg: [],
   },
   onLoad: function (options) {
  
@@ -194,7 +195,8 @@ Page({
       inspectedGoods: inspectedGoods,
       registeredNum: registeredNum,
       productsShelvesNum: productsShelvesNum,
-      removedShelvesNum: removedShelvesNum
+      removedShelvesNum: removedShelvesNum,
+      feedbackMsg: app.globalData.feedbackMsg,
     })
   },
   checkImgTap: function (res) {

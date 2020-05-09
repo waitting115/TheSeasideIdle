@@ -1,4 +1,5 @@
-// pages/myPage/feedback/feedback.js
+let app = getApp();
+
 Page({
 
   /**
@@ -35,7 +36,25 @@ Page({
   onHide: function () {
 
   },
-
+  formSubmit: function (e) {
+    // console.log(e);
+    if(e.detail.value.textarea === '') {
+      wx.showModal({
+        title: '请填写信息！',
+      })
+      return;
+    }
+    wx.showToast({
+      title: '反馈成功！',
+    })
+    app.globalData.feedbackMsg.push(e.detail.value.textarea);
+    //返回上一页
+    setTimeout(function () {
+      wx.navigateBack({
+        delta: 1,
+      })
+    },1000)
+  },
   /**
    * 生命周期函数--监听页面卸载
    */

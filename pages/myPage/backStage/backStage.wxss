@@ -43,6 +43,9 @@ ec-canvas {
   margin-bottom: 2%;
   border: 1px solid #ccc;
 }
+.checkTitle {
+  margin-top: 20rpx;
+}
 .myTitle{
   width: 87%;
   height: 80rpx;
@@ -53,5 +56,11 @@ ec-canvas {
 .myRightImg{
   width: 5%;
   height: 40rpx;
-  /* border: 1px solid #ccc; */
+}
+.feedbackMsgItem {
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  margin: 20rpx 0;
+  padding: 10rpx;
 }

@@ -1,1 +1,8 @@
-<view>意见反馈（一个表单，内容提交到我的微信或者发送到我的邮箱。）</view>
+<view class='all'>
+  <form bindsubmit="formSubmit">
+    <label for="suggest">请输入您宝贵的建议：</label>
+    <textarea id="suggest" row='5' name='textarea' class="textarea"></textarea>
+     <button class="submitBtn" formType="submit" name='submit'>提 交</button>
+  </form>
+
+</view>

@@ -33,7 +33,5 @@
         bindindex = "index"
       ></product-display>
   </view>
-
-
   <view class='footer'>已经到底啦亲~</view>
 </view>

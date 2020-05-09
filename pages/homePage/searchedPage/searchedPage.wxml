@@ -1,0 +1,9 @@
+<!--pages/homePage/searchedPage/searchedPage.wxml-->
+<view class="all">
+    <view class="title">搜索结果</view>
+    <product-display
+        recommendation='{{recommendation}}'
+        bindindex = "index"
+    ></product-display>
+    <view wx:if="{{recommendation.length == 0}}">暂时还没有您需要的宝贝呢，找找其他的试试吧！</view>
+</view>

@@ -2,7 +2,7 @@
   <view class='top'>如果您有什么问题，欢迎和我们联系！</view>
   <!-- <view>下面是我们小程序的5个管理员的微信联系方式（有小姐姐哦！）</view> -->
   <view class='box'>
-    <view wx:for="{{callCenter}}" wx:key="{{index}}"  class='item'>
+    <view wx:for="{{callCenter}}" wx:key="index"  class='item'>
       <view class='pictureBox'>
         <image class='picture' src='{{item.picture}}' mode='aspectFill'></image>
       </view>

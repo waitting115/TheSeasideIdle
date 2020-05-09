@@ -1,1 +1,11 @@
-/* pages/myPage/feedback/feedback.wxss */
+.textarea {
+  width: 100%;
+  border: 2px solid #ccc;
+  margin: 20rpx 0;
+  padding: 10rpx;
+}
+.submitBtn {
+  width: 100%;
+  color: #fff;
+  background-color: #5cb85c;
+}

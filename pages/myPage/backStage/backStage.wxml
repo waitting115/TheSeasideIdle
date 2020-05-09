@@ -1,5 +1,11 @@
 <view class="all">
 
+  <!-- 总体登录日表 -->
+  <ec-canvas ec="{{ ec }}"></ec-canvas>
+
+  <!-- <view>商品类别分布表</view> -->
+  <ec-canvas ec="{{ ec2 }}"></ec-canvas>
+
   <!-- 待审核商品 -->
   <view class="checkGoods">
     <view class="checkBar">
@@ -17,15 +23,15 @@
   <view class="overAll">
     <view class="cls" bindtap="registeredNumTap"><!--点击事件待写-->
       <view class="myTitle">总注册人数：{{registeredNum}}人</view>
-      <image src='/icons/right.png' class='myRightImg'></image>
+      <!-- <image src='/icons/right.png' class='myRightImg'></image> -->
     </view>
     <view class="cls" bindtap="priductsShelvesNumTap">
       <view class="myTitle">总上架商品：{{productsShelvesNum}}件</view>
-      <image src='/icons/right.png' class='myRightImg'></image>
+      <!-- <image src='/icons/right.png' class='myRightImg'></image> -->
     </view>
     <view class="cls" bindtap="removedShelvesNumTap">
       <view class="myTitle">总下架商品：{{removedShelvesNum}}件</view>
-      <image src='/icons/right.png' class='myRightImg'></image>
+      <!-- <image src='/icons/right.png' class='myRightImg'></image> -->
     </view>
     
   </view>
@@ -34,17 +40,17 @@
   <!-- <view class="nowDay">
     <view>现在在线人数：{{}}</view>
   </view> -->
-  
-  <!-- 总体登录日表 -->
-  <!-- <view>总体登录日表</view> -->
-  <ec-canvas ec="{{ ec }}"></ec-canvas>
-
-  <!-- <view>商品类别分布表</view> -->
-  <ec-canvas ec="{{ ec2 }}"></ec-canvas>
 
   <!-- 指定日期的信息 -->
-  <view class="calendarMsg">
+  <!-- <view class="calendarMsg">
   
+  </view> -->
+  <view>
+    <view class="checkTitle">用户反馈：</view>
+    <view>
+      <view wx:for="{{feedbackMsg}}" wx:key="index">
+        <view class="feedbackMsgItem">{{item}}</view>
+      </view>
+    </view>
   </view>
-
 </view>

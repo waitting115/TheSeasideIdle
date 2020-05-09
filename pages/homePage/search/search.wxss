@@ -35,9 +35,12 @@
   width: 24%;
   height: 99%;
   float: left;
-  /* background: green; */
+  background: #fff;
   text-align: center;
   line-height: 75rpx;
+}
+.submitBtn::after {
+  border: none;
 }
 .searchHistory {
  width: 100%;

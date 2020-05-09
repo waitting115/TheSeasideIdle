@@ -34,13 +34,13 @@ Page({
         myTitle: "意见反馈",
         myRightImg: "/icons/right.png"
       },
-      {
-        myImg: "/icons/set.png",
-        myTitle: "设置",
-        myRightImg: "/icons/right.png"
-      },
+      // {
+      //   myImg: "/icons/set.png",
+      //   myTitle: "设置",
+      //   myRightImg: "/icons/right.png"
+      // },
     ]
-  },
+  },  
   onShow: function (e) {
     let newMsgSum = 0;
     let user = app.globalData.user;

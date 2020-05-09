@@ -36,12 +36,6 @@
   font-family: KaiTi;
   font-size: 40rpx;
 }
-.focusOn {
-  /* background : red; */
-}
-.focusedOn {
-  /* background : #ccc; */
-}
 .spzs {
   width: 100%;
   height: 80rpx;

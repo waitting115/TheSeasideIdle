@@ -8,7 +8,7 @@ Page({
     nowTopSearch: '',
     searchLenovo: [],
     lenovoBol: false,
-    allGoodsTitle: []
+    allGoodsTitle: [],
   },
   onLoad: function (options) {
     
@@ -56,9 +56,34 @@ Page({
 			}
 		})
   },
+  // 提交
+  formSubmit: function (e) {
+    let msg = e.detail.value.searchInput;
+    if(msg === '') {
+      msg = e.detail.target.dataset.msg
+    }
+    this.startSearch(msg);
+  },
+  // 选择历史搜索或今日热搜
   check: function (e) {
-    let input = document.getElementById('searchInput');
-    console.log(e);
+    this.startSearch(e.currentTarget.dataset.text)
+  },
+
+  // 开始搜索并跳转
+  startSearch: function (msg) {
+    // console.log(msg);
+    wx.navigateTo({
+      url: '/pages/homePage/searchedPage/searchedPage?msg='+msg
+    });
+  },
+  //回车搜索
+  enterSearch: function (e){
+    let msg = e.detail.value;
+    console.log(e.de)
+    if(msg === undefined) {
+      msg = e.target.dataset.msg
+    }
+    this.startSearch(msg);
   },
   /*生命周期函数--监听页面卸载*/
   onUnload: function () {

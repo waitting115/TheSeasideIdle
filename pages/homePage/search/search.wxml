@@ -4,9 +4,9 @@
     <view class="topBar">
       <image src='https://www.tangchaolizi.club/xchengxu/public/images/icons/search.png' class='icon'></image>
       <em class="em">|</em>
-      <input id="searchInput" type="text" placeholder="{{nowTopSearch}}" name='searchInput' class="searchInput" bindinput="userInput"></input>   
+      <input id="searchInput" type="text" placeholder="{{nowTopSearch}}" name='searchInput' class="searchInput" data-msg="{{nowTopSearch}}" bindconfirm='enterSearch'></input>   
       <em class="em">|</em>   
-      <view class="submitBtn" type="submit" name='submit' bindtap="">搜  索</view>
+      <button class="submitBtn" formType="submit" name='submit' data-msg="{{nowTopSearch}}">搜  索</button>
       <!-- <button type="submit" form-type='submit' class='submitBtn' name='submit'>搜 索</button> -->
     </view>
   </form>

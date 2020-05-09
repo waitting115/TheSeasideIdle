@@ -1,7 +1,8 @@
 .all {
   width: 100%;
-  min-height: 750rpx;
+  height: 100%;
   background: #f2f2f2;
+  position: fixed;
   padding-top: 3%;
   margin: 0;
 }

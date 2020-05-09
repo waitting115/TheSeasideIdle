@@ -108,6 +108,7 @@ App({
     // 商品类别分布数据
     goodsClassDistributionData: [22, 33, 44, 55, 66, 77, 88, 99, 45, 45, 33, 88],
 
+    feedbackMsg: ["第一条用户反馈","第二条用户反馈"],//用户反馈
     classify: [
       {
         title: "考研资料",
@@ -263,7 +264,7 @@ App({
     ],
     //user不存数据库
     user: {
-      userName: "five",
+      userName: "userName",
       headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/cat.jpg",
       openID: "five",
       recommendation: [
