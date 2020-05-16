@@ -261,10 +261,11 @@ App({
     admin: [
       "five",
       "meng"
+
     ],
     //user不存数据库
     user: {
-      userName: "userName",
+      userName: "five",
       headPortraitUrl: "https://www.tangchaolizi.club/xchengxu/public/images/image/userHead/cat.jpg",
       openID: "five",
       recommendation: [
@@ -283,7 +284,7 @@ App({
       ],
       meFocus : ["snwn", "xxg", "hx", "ch", "lsjy"],//openID
       focusMe : ["snwn", "hx", "fzzf"],
-      myCollection : ["lsjy-7", "snwn-8", "hx-14", "hx-16"],//暂时的思路是存“openID-goodsID”，然后再分解从数据中查找，goodsID是1~10000000的一个数字，后台设一个变量，从1开始，审核发布一个商品就加一，这样不会有重复的，这个数字也会是我们小程序中发布的商品总数。
+      myCollection : ["lsjy-7", "snwn-8", "hx-14", "hx-17"],//暂时的思路是存“openID-goodsID”，然后再分解从数据中查找，goodsID是1~10000000的一个数字，后台设一个变量，从1开始，审核发布一个商品就加一，这样不会有重复的，这个数字也会是我们小程序中发布的商品总数。
       myMessage: [
         {
           openID: "hx",

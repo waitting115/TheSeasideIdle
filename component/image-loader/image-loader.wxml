@@ -1,0 +1,13 @@
+<view wx:if="{{!finishLoadFlag}}" class="defaultImg" style="{{width ? 'width:' + width : ''}};{{height ? 'height:' + height : ''}}" >
+    <view class="loadEffect" hidden="{{errorFlag}}">
+        <view class="span"></view>
+        <view class="span"></view>
+        <view class="span"></view>
+        <view class="span"></view>
+        <view class="span"></view>
+    </view>
+    <view class="loadEffectError" style="{{height ? 'line-height:' + height : ''}};" hidden="{{!errorFlag}}">
+        加载失败
+    </view>
+</view>
+<image mode="{{mode}}" class="originImg {{finishLoadFlag ? '' : 'before-load'}}" src="{{originalImage}}" bindload="finishLoad" binderror="errorLoad" style="{{finishLoadFlag && width ? 'width:' + width : ''}};{{finishLoadFlag && height ? 'height:' + height : ''}}" />

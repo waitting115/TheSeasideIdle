@@ -5,7 +5,7 @@ Page({
   data: {
     myClt : []
   },
-  onLoad: function (options) {
+  onShow: function (options) {
     let user = app.globalData.user;
     let allUser = app.globalData.allUser;
     let myCollection = user.myCollection;

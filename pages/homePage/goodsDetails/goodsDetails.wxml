@@ -23,7 +23,7 @@
   <view class='title'>{{currentMsg.goodsTitle}}</view>
   <view class='introduce'>{{currentMsg.introduceText}}</view>
   <view class='tabBar'>
-    <view wx:for="{{tabBar}}" wx:key="index" class='tabBarItem' bindtap='inFunction' data-sign='{{item.title}}'>
+    <view wx:for="{{tabBar}}" wx:key="index" class='tabBarItem' bindtap='tabBarClick' data-sign='{{item.title}}'>
       <image src='{{item.iconUrl}}' class='tabBarImg' ></image>
       <view class='tabBarTitle'>{{item.title}}</view>
     </view>

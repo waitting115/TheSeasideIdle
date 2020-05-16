@@ -11,8 +11,15 @@ Page({
 
   },
   onLoad: function (options) {
+    //所有上架的商品
+    let allGoods = app.globalData.user.goods.filter((item) => {
+      if(item.state === 'OUT') {
+        return false;
+      };
+      return true;
+    })
     this.setData({
-      recommendation : app.globalData.user.goods
+      recommendation : allGoods
     })
     // console.log(this.data.recommendation)
   },
@@ -76,19 +83,18 @@ Page({
                         console.log(res)
                       }
                     })
-                    //将商品下架（不应该放在这里，有bug，应该在下一页改数据，然后返回的时候重新加载）
-                    // console.log(index)
-                    // recommendation.splice(index, 1);
-                    // that.setData({
-                    //   recommendation: recommendation
-                    // })//这里也只是做了效果的处理，数据处理有待完善
+                    //将商品下架
+                    recommendation[index].state = 'OUT';
+                    // console.log(app.globalData.allUser[0].goods[index]);
+                    app.globalData.allUser[0].goods[index].state = 'OUT';
+                    // console.log(recommendation[index])
+                    that.onShow();
                   } else if (res.cancel) {
                     console.log('用户点击取消')
                   }
                 }
               })
             } else if(tapIndex == 1) {
-             
               // console.log(recommendation);
               // console.log(that.data.index)
               wx.showModal({
@@ -96,10 +102,11 @@ Page({
                 content: '您确定下架该商品吗？',
                 success(res) {
                   if (res.confirm) {
-                    recommendation.splice(index,1);
-                    that.setData({
-                      recommendation: recommendation
-                    })//这里也只是做了效果的处理，数据处理有待完善
+                    // 更改商品状态才是正确的选择！
+                    recommendation[index].state = 'OUT';
+                    app.globalData.allUser[0].goods[index].state = 'OUT';
+                    // console.log(recommendation[index])
+                    that.onShow();
                   }
                 }
               })

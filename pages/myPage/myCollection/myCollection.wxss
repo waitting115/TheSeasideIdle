@@ -9,7 +9,6 @@
   flex-flow: column nowrap;
   justify-content: start;
   align-items: center;
-  position: fixed;
 }
 .item {
   width: 100%;
@@ -42,9 +41,6 @@
 .title {
   margin-right: 5%;
 }
-/* .null {
-
-} */
 .footer {
   width: 100%;
   height: auto;
@@ -52,6 +48,6 @@
   text-align: center;
   color: #8c8c8c;
   padding: 1%;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
 }

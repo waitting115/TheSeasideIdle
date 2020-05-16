@@ -23,14 +23,16 @@ Page({
     let classifyGoods_2 = [];//非个性推荐商品
     let allUser = app.globalData.allUser;//所有用户
     let species = app.globalData.user.recommendation;//user偏好
-    for (i = 0, i_len = allUser.length; i < i_len; i++) {//用i_len将长度存起来，有利于提高效率
+    for (i = 1, i_len = allUser.length; i < i_len; i++) {//用i_len将长度存起来，有利于提高效率（从1开始，去掉自己）
       for (j = 0, j_len = allUser[i].goods.length; j < j_len; j++) {
         for(p = 0, p_len = species.length; p < p_len; p ++) {//循环user偏好
-          if (allUser[i].goods[j].classify == species[p]) {//筛选出与之偏好相同的商品并添加
-            classifyGoods_1[k] = allUser[i].goods[j];
-            k ++;
-          } else {//添加非个性推荐商品
-            classifyGoods_2.push(allUser[i].goods[j])
+          if(allUser[i].goods[j].state === 'UP') {//前提商品状态必须上架
+            if (allUser[i].goods[j].classify == species[p]) {//筛选出与之偏好相同的商品并添加，并且商品需要上架状态
+              classifyGoods_1[k] = allUser[i].goods[j];
+              k ++;
+            } else {//添加非个性推荐商品
+              classifyGoods_2.push(allUser[i].goods[j])
+            }
           }
         }
       }
