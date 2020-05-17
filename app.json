@@ -20,7 +20,6 @@
     "component/publish/publish",
     "pages/myPage/editCommodity/editCommodity",
     "pages/myPage/inspectedGoods/inspectedGoods",
-    "component/footer/footer",
     "pages/homePage/searchedPage/searchedPage",
     "component/image-loader/image-loader"
   ],

@@ -44,6 +44,9 @@ Page({
   clickBtn: function (e) {
     if(e.currentTarget.dataset.cls == "focusOn") {
       //加关注按钮
+      wx.showToast({
+        title: '已关注',
+      })
       let user_1 = app.globalData.user;
       let id = e.currentTarget.dataset.item.openID;
       user_1.meFocus.push(id);//把他加到我的meFocus中
@@ -60,6 +63,9 @@ Page({
       }
     } else if (e.currentTarget.dataset.cls == "focusedOn") {
       //已关注按钮
+      wx.showToast({
+        title: '已取消关注',
+      })
       let id = e.currentTarget.dataset.item.openID;
       let user_1 = app.globalData.user;
       let index = user_1.meFocus.indexOf(id);//找到位置把他在我的meFocus中删掉
